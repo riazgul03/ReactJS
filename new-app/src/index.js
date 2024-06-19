@@ -9,20 +9,11 @@ import House from './House';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-let a = " Amir";
+const friends = ["Amit ", " Zain", " Kumar", " Ali"]
 root.render(
-
-  <House/>
-    /* <HelloMessage name={a} age=" 23">
-      <p>Children Element</p>
-    </HelloMessage>
-    <HelloMessage name=" Kumar" age=" 25">
-    <button type='button ' value="Click"> Click</button>
-    </HelloMessage>
-    <HelloMessage name=" Amit" age=" 22">
-    <h3>Children Element 3</h3>
-    </HelloMessage>
-  </> */
+<React.StrictMode>
+  <App name=" Adil" age={23} isMarried={false} arr={friends}/>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
