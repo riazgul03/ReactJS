@@ -4,24 +4,13 @@ import './index.css';
 import { App } from './App';
 import reportWebVitals from './reportWebVitals';
 import MyClass from './MyClass';
+import ClassPro from './ClassPro'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let a = "Adil";
 root.render(
   <React.StrictMode>
-    <MyClass name={a} age={22}>
-<h2>Child No : 1</h2>
-    </MyClass>
-    <MyClass name="Kumar" age={26}>
-    <button type='button' >Submit</button>
-    </MyClass>
-    <MyClass name="Amit" age={28}>
-    <ol>
-      <li>Ali</li>
-      <li>Zain</li>
-      <li>Noman</li>
-    </ol>
-    </MyClass>
+  <ClassPro name="Adil" age={23}/>
   </React.StrictMode>
 );
 
