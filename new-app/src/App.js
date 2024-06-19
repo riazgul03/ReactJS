@@ -6,10 +6,8 @@ import Footer from './Footer';
 function App() {
   return (
     <>
-    <Header/>
-    <Sidebar/>
-    <Footer/>
-  </>
+      <h1>Learning Never Ends</h1>
+    </>
   );
 }
 
