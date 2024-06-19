@@ -6,7 +6,11 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <>
   <h1>Learning Never Ends</h1>
+  <h2>Riaz Gul</h2>
+  </>
+  
 );
 
 // If you want to start measuring performance in your app, pass a function
