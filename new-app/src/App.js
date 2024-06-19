@@ -1,9 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-
+let a = 10;
+let msg = "";
+if(a >5){
+  msg = "Hello"
+}  else{
+  msg = "Bay"
+}
 function App() {
   return (
     <div className="App">
+    <h1>{msg}</h1>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
