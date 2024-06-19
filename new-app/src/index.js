@@ -9,10 +9,9 @@ import House from './House';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const friends = ["Amit ", " Zain", " Kumar", " Ali"]
 root.render(
 <React.StrictMode>
-  <App name=" Adil" age={23} isMarried={false} arr={friends}/>
+ <App name="Adil" age={22}/>
   </React.StrictMode>
 );
 

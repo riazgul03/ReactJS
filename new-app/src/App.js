@@ -1,24 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
-import PropTypes from 'prop-types'
-function App(props) {
-  return (
-    <>
-     <h1>Hey{props.name}</h1>
-     <h1>Hey {props.age}</h1>
-     <h1>Hey {props.isMarried.toString()}</h1>
-     <h1> {props.arr}</h1>
-     <h1> {props.arr[0]}</h1>
 
-    </>
+// function App(props) {
+//   return (
+//     <>
+//     <h1>Learning Never Ends</h1>
+//     </>
+//   );
+// }
+
+// const App = () => <h1>Mohammad Adil</h1>
+const App = (props) => {
+  return(
+  <>
+    <h1>{props.name}</h1>
+    <h2>{props.age}</h2>
+  </>
   );
-
-}
-App.propType = {
-  name:PropTypes.string,
-  age:PropTypes.number,
-  isMarried:PropTypes.bool,
-  arr:PropTypes.array
 }
 
 export default App;
