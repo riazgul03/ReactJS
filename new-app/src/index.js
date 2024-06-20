@@ -5,12 +5,13 @@ import { App } from './App';
 import reportWebVitals from './reportWebVitals';
 import MyClass from './MyClass';
 import ClassPro from './ClassPro'
+import Employee from './Employee';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let a = "Adil";
 root.render(
   <React.StrictMode>
-  <ClassPro name="Adil" age={23}/>
+    <Employee name= "Adil"/>
   </React.StrictMode>
 );
 
