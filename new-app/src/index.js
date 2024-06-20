@@ -8,13 +8,16 @@ import ClassPro from './ClassPro'
 import Employee from './Employee';
 import Customer from './Customer';
 import ClickFunction from './ClickFunction';
+import BindingEvent from './BindingEvent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let a = "Adil";
 root.render(
-  <React.StrictMode>
-    <ClickFunction/>
-  </React.StrictMode>
+
+  <div className='App'>
+    <BindingEvent />
+  </div>
+
 );
 
 // If you want to start measuring performance in your app, pass a function
