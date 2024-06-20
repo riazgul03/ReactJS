@@ -6,12 +6,13 @@ import reportWebVitals from './reportWebVitals';
 import MyClass from './MyClass';
 import ClassPro from './ClassPro'
 import Employee from './Employee';
+import Customer from './Customer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let a = "Adil";
 root.render(
   <React.StrictMode>
-    <Employee name= "Adil"/>
+    <Customer name="Amit" age={23}/>
   </React.StrictMode>
 );
 
