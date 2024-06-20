@@ -9,13 +9,14 @@ import Employee from './Employee';
 import Customer from './Customer';
 import ClickFunction from './ClickFunction';
 import BindingEvent from './BindingEvent';
+import Mounting1 from './Mounting1';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let a = "Adil";
 root.render(
 
   <div className='App'>
-    <BindingEvent />
+    <Mounting1 city="Peshawar"/>
   </div>
 
 );
