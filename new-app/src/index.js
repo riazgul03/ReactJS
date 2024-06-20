@@ -7,12 +7,13 @@ import MyClass from './MyClass';
 import ClassPro from './ClassPro'
 import Employee from './Employee';
 import Customer from './Customer';
+import ClickFunction from './ClickFunction';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let a = "Adil";
 root.render(
   <React.StrictMode>
-    <Customer name="Amit" age={23}/>
+    <ClickFunction/>
   </React.StrictMode>
 );
 
