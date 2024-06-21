@@ -15,12 +15,13 @@ import Person1 from './Person1';
 import ParentClass from './ParentClass';
 import ParentComponent from './ParentComponent';
 import Students from './Students';
+import StyleComponent from './StyleComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
   <div className='App'>
-   <Students/>
+   <StyleComponent/>
   </div>
 
 );
