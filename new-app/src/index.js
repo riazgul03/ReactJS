@@ -14,12 +14,13 @@ import Updating1 from './Updating1';
 import Person1 from './Person1';
 import ParentClass from './ParentClass';
 import ParentComponent from './ParentComponent';
+import Students from './Students';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
   <div className='App'>
-   <App/>
+   <Students/>
   </div>
 
 );
