@@ -13,13 +13,14 @@ import Mounting1 from './Mounting1';
 import Updating1 from './Updating1';
 import Person1 from './Person1';
 import ParentClass from './ParentClass';
+import ParentComponent from './ParentComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let a = "Adil";
 root.render(
 
   <div className='App'>
-    <ParentClass/>
+    <ParentComponent/>
   </div>
 
 );
