@@ -11,13 +11,14 @@ import ClickFunction from './ClickFunction';
 import BindingEvent from './BindingEvent';
 import Mounting1 from './Mounting1';
 import Updating1 from './Updating1';
+import Person1 from './Person1';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let a = "Adil";
 root.render(
 
   <div className='App'>
-    <Updating1/>
+    <Person1 city="Hyderabad"/>
   </div>
 
 );
