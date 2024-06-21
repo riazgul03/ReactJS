@@ -3,7 +3,7 @@ import React from 'react'
 function Student({std}) {
   return (
     <div>
-        <h1>I am {std.name} and I am {std.age} Years Old.</h1>
+        <h1>I am {std.name} and I am {std.age} Year Old.</h1>
     </div>
   )
 }
