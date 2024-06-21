@@ -12,13 +12,14 @@ import BindingEvent from './BindingEvent';
 import Mounting1 from './Mounting1';
 import Updating1 from './Updating1';
 import Person1 from './Person1';
+import ParentClass from './ParentClass';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let a = "Adil";
 root.render(
 
   <div className='App'>
-    <Person1 city="Hyderabad"/>
+    <ParentClass/>
   </div>
 
 );
