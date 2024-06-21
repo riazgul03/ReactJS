@@ -1,21 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import React,{Component} from 'react';
+import Component1 from './Component1';
+import Component2 from './Component2';
 
-export class App extends React.Component{
-  render(){
-    return(
-     <>
-      
-     </>
-    )
+ function App() {
+  const name = "Prem";
+  if (name == "Adil") {
+    return <Component1 />
+  }
+  else {
+    return <Component2/>
   }
 }
-// export function App2() {
-//   return (
-//     <>
-//     <h1>Learning Never Ends</h1>
-//     </>
-//   );
-// }
-export default App;
+
+export default App

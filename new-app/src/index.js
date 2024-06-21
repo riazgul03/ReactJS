@@ -16,11 +16,10 @@ import ParentClass from './ParentClass';
 import ParentComponent from './ParentComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-let a = "Adil";
 root.render(
 
   <div className='App'>
-    <ParentComponent/>
+   <App/>
   </div>
 
 );
