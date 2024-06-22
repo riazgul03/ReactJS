@@ -8,14 +8,16 @@ import USWithObject from './USWithObject';
 import USWithArray from './USWithArray';
 import ClassState from './ClassState';
 import FunctionState from './FunctionState';
+import ClassEffect from './ClassEffect';
+import FunctionEffect from './FunctionEffect';
 
 
 
 function App(){
   return(
     <div>
-   {/* <ClassState/> */}
-   <FunctionState/>
+    {/* <ClassEffect/> */}
+    <FunctionEffect/>
     </div>
   )
 }
