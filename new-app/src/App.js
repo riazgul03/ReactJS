@@ -10,14 +10,21 @@ import ClassState from './ClassState';
 import FunctionState from './FunctionState';
 import ClassEffect from './ClassEffect';
 import FunctionEffect from './FunctionEffect';
+import CompA from './CompA';
+import { createContext, useState } from 'react';
 
+export const NameContext = createContext()
+export const ChannelContext = createContext()
 
-
-function App(){
-  return(
+function App() {
+  const [name, setName] = useState('Kumar')
+  return (
     <div>
-    {/* <ClassEffect/> */}
-    <FunctionEffect/>
+      <NameContext.Provider value={name}>
+        <ChannelContext.Provider value={"Learning Never Ends"}>
+          <CompA />
+        </ChannelContext.Provider>
+      </NameContext.Provider>
     </div>
   )
 }
