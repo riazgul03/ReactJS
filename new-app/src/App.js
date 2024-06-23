@@ -14,13 +14,14 @@ import FunctionEffect from './FunctionEffect';
 import { createContext, useState } from 'react';
 import ControlledForm from './ControlledForm';
 import ControlledFunction from './ControlledFunction';
+import MultipleInputs from './MultipleInputs';
 
 
 function App() {
   
   return (
     <div>
-      <ControlledFunction/>
+     <MultipleInputs/>
     </div>
   )
 }
