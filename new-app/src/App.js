@@ -16,13 +16,14 @@ import ControlledForm from './ControlledForm';
 import ControlledFunction from './ControlledFunction';
 import MultipleInputs from './MultipleInputs';
 import FunctionInputs from './FunctionInputs';
+import OtherInputs from './OtherInputs';
 
 
 function App() {
   
   return (
     <div>
-     <FunctionInputs/>
+    <OtherInputs/>
     </div>
   )
 }
