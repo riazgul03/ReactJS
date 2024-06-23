@@ -13,13 +13,14 @@ import FunctionEffect from './FunctionEffect';
 //import CompA from './CompA';
 import { createContext, useState } from 'react';
 import ControlledForm from './ControlledForm';
+import ControlledFunction from './ControlledFunction';
 
 
 function App() {
   
   return (
     <div>
-      <ControlledForm/>
+      <ControlledFunction/>
     </div>
   )
 }
