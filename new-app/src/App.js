@@ -18,13 +18,14 @@ import MultipleInputs from './MultipleInputs';
 import FunctionInputs from './FunctionInputs';
 import OtherInputs from './OtherInputs';
 import MultipleChecks from './MultipleChecks';
+import RefComponent from './RefComponent';
 
 
 function App() {
   
   return (
     <div>
-    <MultipleChecks/>
+    <RefComponent/>
     </div>
   )
 }
