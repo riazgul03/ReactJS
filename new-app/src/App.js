@@ -17,13 +17,14 @@ import ControlledFunction from './ControlledFunction';
 import MultipleInputs from './MultipleInputs';
 import FunctionInputs from './FunctionInputs';
 import OtherInputs from './OtherInputs';
+import MultipleChecks from './MultipleChecks';
 
 
 function App() {
   
   return (
     <div>
-    <OtherInputs/>
+    <MultipleChecks/>
     </div>
   )
 }
