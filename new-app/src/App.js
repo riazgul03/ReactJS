@@ -20,13 +20,14 @@ import OtherInputs from './OtherInputs';
 import MultipleChecks from './MultipleChecks';
 import RefComponent from './RefComponent';
 import UnControlled from './UnControlled';
+import CallbackRefComp from './CallbackRefComp';
 
 
 function App() {
   
   return (
     <div>
-    <UnControlled/>
+    <CallbackRefComp/>
     </div>
   )
 }
