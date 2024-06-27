@@ -19,13 +19,14 @@ import FunctionInputs from './FunctionInputs';
 import OtherInputs from './OtherInputs';
 import MultipleChecks from './MultipleChecks';
 import RefComponent from './RefComponent';
+import UnControlled from './UnControlled';
 
 
 function App() {
   
   return (
     <div>
-    <RefComponent/>
+    <UnControlled/>
     </div>
   )
 }
