@@ -5,22 +5,8 @@ import Home from './Components/Home';
 import About from './Components/About';
 import Contact from './Components/Contact';
 import Navbar from './Components/Navbar';
+import PageNotFound from './Components/PageNotFound';
 function App() {
-  const navigate = useNavigate();
-  // const NavigateToAbout = () =>{
-  //   navigate('/about');
-  // }
-
-
-
-  const NavigateToWhere = () => {
-    let name = 'Kumar'
-    if (name == 'Adil') {
-      navigate('/about')
-    } else {
-      navigate('/contact')
-    }
-  }
   return (
     <>
       <Navbar />
@@ -28,14 +14,10 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/About' element={<About />} />
         <Route path='/Contact' element={<Contact />} />
+        <Route path='*' element={<PageNotFound />} />
+
       </Routes>
-      {/* <button onClick={() => navigate('/about')}>About</button>
-      <button onClick={() => NavigateToAbout()}>About</button>
-      <button onClick={() => navigate('/contact')}>Contact</button>
-      <button onClick={() => NavigateTo('/about')}>About</button>
-      <button onClick={() => NavigateTo('/contact')}>Contact</button> */}
-      <button onClick={() => NavigateToWhere()}>Click Me</button>
-      <button onClick={() => navigate(-1)}>Go Back</button>
+
 
     </>
   );
