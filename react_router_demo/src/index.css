@@ -12,12 +12,18 @@ code {
     monospace;
 }
 
-nav{
+nav {
   background-color: lightgray;
   padding: 20px;
 }
-nav a{
+
+nav a {
   margin-right: 20px;
   font-size: 20px;
   text-decoration: none;
 }
+
+/* nav a.active{
+  font-weight: bold;
+  font-size: 23px;
+} */

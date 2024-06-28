@@ -1,13 +1,21 @@
 import React from 'react'
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 function Navbar() {
-  return (
-   <nav>
-    <Link to='/'>Home</Link>
-    <Link to='/about'>About</Link>
-    <Link to='/contact'>Contact</Link>
-   </nav>
-  )
+    const NavLinkCSS = ({ isActive }) => {
+        return {
+            fontWeight: isActive ? 'bold' : 'normal',
+            fontSize: isActive ? '23px' : '20px'
+
+        }
+    }
+    return (
+        <nav>
+            <NavLink style={NavLinkCSS} to='/'>Home</NavLink>
+            <NavLink style={NavLinkCSS} to='/about'>About</NavLink>
+            <NavLink style={NavLinkCSS} to='/contact'>Contact</NavLink>
+        </nav>
+    )
 }
 
 export default Navbar
