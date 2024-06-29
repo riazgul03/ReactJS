@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-nav {
+.main-nav {
   background-color: lightgray;
   padding: 20px;
 }
@@ -23,7 +23,3 @@ nav a {
   text-decoration: none;
 }
 
-/* nav a.active{
-  font-weight: bold;
-  font-size: 23px;
-} */
