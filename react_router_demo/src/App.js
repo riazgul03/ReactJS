@@ -9,6 +9,9 @@ import PageNotFound from './Components/PageNotFound';
 import Products from './Components/Products';
 import Shirts from './Components/Shirts';
 import Jeans from './Components/Jeans';
+import Users from './Components/Users';
+import UsersDetails from './Components/UsersDetails';
+import Admin from './Components/Admin';
 function App() {
   return (
     <>
@@ -22,6 +25,10 @@ function App() {
         </Route>
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/users' element={<Users/>}>
+        <Route path=':id' element={<UsersDetails/>}/>
+        <Route path='admin' element={<Admin/>}/>
+        </Route>
         <Route path='*' element={<PageNotFound />} />
       </Routes>
 
