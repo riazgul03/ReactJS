@@ -8,8 +8,8 @@ function Products() {
         <h1>This Is My Products Page</h1>
     </div>
     <nav>
-        <Link to='shirts'>Shirts</Link>
-        <Link to='jeans'>Jeans</Link>
+        <Link to='/products/shirts'>Shirts</Link>
+        <Link to='/products/jeans'>Jeans</Link>
     </nav>
     <Outlet/>
     </>
