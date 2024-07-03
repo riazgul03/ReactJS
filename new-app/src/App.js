@@ -24,6 +24,7 @@ import CallbackRefComp from './CallbackRefComp';
 import HookuseRef from './HookuseRef';
 import HookUesRef2 from './HookUesRef2';
 import Validation from './Validation';
+import FormikForm from './FormikForm';
 // import Comp1 from './Comp1';
 // import Comp2 from './Comp2';
 // import React, { Suspense, lazy } from 'react'
@@ -36,7 +37,7 @@ function App() {
 
   return (
     <div>
-      <Validation />
+      <FormikForm/>
     </div>
   )
 }
