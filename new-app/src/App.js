@@ -23,12 +23,12 @@ import UnControlled from './UnControlled';
 import CallbackRefComp from './CallbackRefComp';
 import HookuseRef from './HookuseRef';
 import HookUesRef2 from './HookUesRef2';
+import Validation from './Validation';
 // import Comp1 from './Comp1';
 // import Comp2 from './Comp2';
-
-import React, { Suspense, lazy } from 'react'
-const Comp1 = lazy(() => import('./Comp1'))
-const Comp2 = lazy(() => import('./Comp2'))
+// import React, { Suspense, lazy } from 'react'
+// const Comp1 = lazy(() => import('./Comp1'))
+// const Comp2 = lazy(() => import('./Comp2'))
 
 
 
@@ -36,11 +36,7 @@ function App() {
 
   return (
     <div>
-      <h1>Lasy Loading Demo</h1>
-      <Comp1 />
-      <suspense fallback={<div>Loading.....</div>}>
-        <Comp2 />
-      </suspense>
+      <Validation />
     </div>
   )
 }
