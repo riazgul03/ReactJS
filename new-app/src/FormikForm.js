@@ -5,7 +5,10 @@ import { formSchema } from './FormSchema';
 function FormikForm() {
     const ForminialValue = {
         name: '',
-        email: ''
+        email: '',
+        age: '',
+        pass:'',
+        cpass:''
     }
     // const formik = useFormik({
     //     initialValues: ForminialValue,
@@ -16,13 +19,18 @@ function FormikForm() {
     //     }
     // });
 
-    const {handleSubmit, handleChange, values, errors} =  useFormik({
+    const {handleSubmit, handleChange,handleBlur, touched, values, errors} =  useFormik({
         initialValues:ForminialValue,
         validationSchema:formSchema,
-        onSubmit: (values) =>{
+        onSubmit: (values,action) =>{
             console.log(values);
             console.log(values.name);
             console.log(values.email);
+            console.log(values.age);
+            console.log(values.pass);
+            console.log(values.cpass);
+            action.resetForm();
+
         }
        });
 
@@ -31,14 +39,36 @@ function FormikForm() {
             <h1>Formik Demo</h1>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="">Enter Name:</label>
-                <input type="text" name='name' onChange={handleChange} value={values.name} />
+                <input type="text" name='name' onBlur={handleBlur} onChange={handleChange} value={values.name} />
                 <br />
-                <span style={{color:'red'}}>{errors.name}</span>
+                {errors.name && touched.name 
+                ? ( <span style={{color:'red'}}>{errors.name}</span>) : null}
                 <br /><br />
-                <label htmlFor="">Enter Emai:</label>
-                <input type="text" name='email' onChange={handleChange} value={values.email} />
+                <label htmlFor="">Enter Email:</label>
+                <input type="text" name='email' onBlur={handleBlur} onChange={handleChange} value={values.email} />
                 <br />
-                <span style={{color:'red'}}>{errors.email}</span>
+                {errors.email && touched.email
+                ? ( <span style={{color:'red'}}>{errors.email}</span>) : null}
+                <br /><br />
+                <label htmlFor="">Enter Age:</label>
+                <input type="text" name='age' onBlur={handleBlur} onChange={handleChange} value={values.age} />
+                <br />
+                {errors.age && touched.age
+                ? ( <span style={{color:'red'}}>{errors.age}</span>) : null}
+                <br /><br />
+
+                <label htmlFor="">Enter Password:</label>
+                <input type="text" name='pass' onBlur={handleBlur} onChange={handleChange} value={values.pass} />
+                <br />
+                {errors.pass && touched.pass
+                ? ( <span style={{color:'red'}}>{errors.pass}</span>) : null}
+                <br /><br />
+
+                <label htmlFor="">Enter Confirm Password:</label>
+                <input type="text" name='cpass' onBlur={handleBlur} onChange={handleChange} value={values.cpass} />
+                <br />
+                {errors.cpass && touched.cpass
+                ? ( <span style={{color:'red'}}>{errors.cpass}</span>) : null}
                 <br /><br />
                 <input type="submit" value="Submit" />
             </form>
