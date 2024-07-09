@@ -26,6 +26,7 @@ import HookUesRef2 from './HookUesRef2';
 import Validation from './Validation';
 import FormikForm from './FormikForm';
 import FormikForm2 from './FormikForm2';
+import ReactBS from './ReactBS';
 
 // import Comp1 from './Comp1';
 // import Comp2 from './Comp2';
@@ -39,7 +40,7 @@ function App() {
 
   return (
     <div>
-      <FormikForm2/>
+      <ReactBS/>
     </div>
   )
 }
