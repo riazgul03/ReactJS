@@ -1,24 +1,39 @@
-import { Field, Form, Formik } from 'formik'
+import { ErrorMessage, Field, Form, Formik } from 'formik'
 import React, { useState } from 'react'
+import * as yup from 'yup'
+import RedErrorMessage from './RedErrorMessage'
 
 function FormikForm2() {
- const [formData, setFormData] = useState({})
+//  const [formData, setFormData] = useState({})
+      const NewValidation = yup.object({
+        name:yup.string().required("Name is Must"),
+       
+      })
   return (
     <div>
-        <Formik initialValues={{name:"", age:"", pass:"", gender:"", hobby:"", country:"", comment:""}}
-        onSubmit={(values,age) =>{
+     
+        <Formik
+        validationSchema={NewValidation}
+         initialValues={{name:"", age:"", pass:"", gender:"", hobby:"", country:"", comment:""}}
+        onSubmit={(values) =>{
         console.log(values)
-        setFormData(values)
+        // setFormData(values)
         }}>
             <Form>
                 <label htmlFor="">Enter Name: </label>
                 <Field type="text" name="name"/>
+                <RedErrorMessage name='name'/>
+                {/* <ErrorMessage name='name'/> */}
                 <br /><br />
                 <label htmlFor="">Enter Age: </label>
                 <Field type="number" name="age"/>
+               
+                
                 <br /><br />
                 <label htmlFor="">Enter Password: </label>
                 <Field type="password" name="pass"/>
+                
+
                 <br /><br />
                 <label htmlFor="">Enter Gender: &nbsp;</label>
                 <label htmlFor="">Male</label>
@@ -50,8 +65,8 @@ function FormikForm2() {
             </Form>
         </Formik>
         {/* <h1>{JSON.stringify(formData)}</h1> */}
-        <h1>{formData.name}</h1>
-        <h1>{formData.age}</h1>
+        {/* <h1>{formData.name}</h1>
+        <h1>{formData.age}</h1> */}
 
     </div>
   )
