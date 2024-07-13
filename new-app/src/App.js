@@ -29,6 +29,8 @@ import FormikForm2 from './FormikForm2';
 import ReactBS from './ReactBS';
 import GridBS from './GridBS';
 import ImagesDemo from './ImagesDemo';
+import { CardImg } from 'react-bootstrap';
+import CardsBs from './CardsBs';
 
 // import Comp1 from './Comp1';
 // import Comp2 from './Comp2';
@@ -42,7 +44,7 @@ function App() {
 
   return (
     <div>
-      <ImagesDemo/>
+      <CardsBs/>
     </div>
   )
 }
