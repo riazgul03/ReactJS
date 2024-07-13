@@ -48,7 +48,7 @@ function CardsBs() {
                 <Col md={4}>
                     <Card bg='secondary'>
                         <Card.Img src='images/Koala.jpg' />
-                        <Card.ImgOverlay style={{color:'white'}}>
+                        <Card.ImgOverlay style={{ color: 'white' }}>
                             <Card.Title>Card Title</Card.Title>
                             <Card.Subtitle>Card Sub Title</Card.Subtitle>
                             <Card.Text>
@@ -58,7 +58,7 @@ function CardsBs() {
                             <div className='d-grid'>
                                 <Button variant='success'>Read More...</Button>
                             </div>
-                            </Card.ImgOverlay>
+                        </Card.ImgOverlay>
                     </Card>
                 </Col>
             </Row>
