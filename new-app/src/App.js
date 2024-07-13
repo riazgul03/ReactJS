@@ -28,6 +28,7 @@ import FormikForm from './FormikForm';
 import FormikForm2 from './FormikForm2';
 import ReactBS from './ReactBS';
 import GridBS from './GridBS';
+import ImagesDemo from './ImagesDemo';
 
 // import Comp1 from './Comp1';
 // import Comp2 from './Comp2';
@@ -41,7 +42,7 @@ function App() {
 
   return (
     <div>
-      <GridBS/>
+      <ImagesDemo/>
     </div>
   )
 }
