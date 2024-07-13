@@ -31,6 +31,7 @@ import GridBS from './GridBS';
 import ImagesDemo from './ImagesDemo';
 import { CardImg } from 'react-bootstrap';
 import CardsBs from './CardsBs';
+import MyNavbar from './MyNavbar';
 
 // import Comp1 from './Comp1';
 // import Comp2 from './Comp2';
@@ -44,7 +45,7 @@ function App() {
 
   return (
     <div>
-      <CardsBs/>
+      <MyNavbar/>
     </div>
   )
 }
