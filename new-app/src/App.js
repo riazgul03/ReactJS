@@ -33,6 +33,7 @@ import { CardImg } from 'react-bootstrap';
 import CardsBs from './CardsBs';
 import MyNavbar from './MyNavbar';
 import MyCarousel from './MyCarousel';
+import Reducers from './Reducers';
 
 // import Comp1 from './Comp1';
 // import Comp2 from './Comp2';
@@ -46,7 +47,7 @@ function App() {
 
   return (
     <div>
-      <MyCarousel/>
+      <Reducers/>
     </div>
   )
 }
