@@ -1,11 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
 import Create from './Components/Create';
+import { Route, Routes } from 'react-router-dom';
+import Read from './Components/Read';
 
 function App() {
+
   return (
     <div className="container">
-      <Create />
+      <Routes>
+        <Route path='/' element={<Read />}></Route>
+        <Route path='/Create' element={<Create />}></Route>
+      </Routes>
     </div>
   );
 }

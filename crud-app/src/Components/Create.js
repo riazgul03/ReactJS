@@ -1,17 +1,23 @@
 import axios from 'axios';
 import React, { useState } from 'react'
+import { useNavigate, Link } from 'react-router-dom';
 
 function Create() {
     const [name, setName] = useState('');
     const [age, setAge] = useState('');
     const [email, setEmail] = useState('');
 
+    const navigate = useNavigate();
+
     const handleSubmit = (e) => {
+
         e.preventDefault();
         axios.post('https://669b9e46276e45187d360200.mockapi.io/crud', {
             e_name: name,
             e_age: age,
             e_email: email
+        }).then(() => {
+            navigate('/')
         })
     }
 
@@ -19,6 +25,11 @@ function Create() {
         <>
             <div className='row'>
                 <div className='col-md-4'>
+                    <div className='mb-2 mt-2'>
+                        <Link to='/'>
+                            <button className='btn btn-primary'>Read Data</button>
+                        </Link>
+                    </div>
                     <div className='bg-primary text-center p-4'>
                         <h1>Create Data</h1>
                     </div>
