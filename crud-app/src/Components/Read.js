@@ -15,12 +15,20 @@ function Read() {
         axios.delete(`https://669b9e46276e45187d360200.mockapi.io/crud/${id}`)
             .then(() => {
                 getData();
-            })
+            });
     }
+
+   function setDataToStorage(id, name, age, email){
+    localStorage.getItem('id',id);
+    localStorage.getItem('name',name);
+    localStorage.getItem('age',age);
+    localStorage.getItem('email',email);
+
+   }
 
     useEffect(() => {
         getData();
-    }, [getData])
+    },[])
 
     return (
         <>
@@ -52,11 +60,13 @@ function Read() {
                                                 <td>{item.e_name}</td>
                                                 <td>{item.e_age}</td>
                                                 <td>{item.e_email}</td>
-                                                <td>
-                                                    <button className='btn btn-primary'>Edit</button>
+                                                <td>  
+                                                    <Link to='/edit'>
+                                                        <button className='btn btn-primary' onClick={() => setDataToStorage(item.id, item.e_name, item.e_age, item.e_email)}>Edit</button>
+                                                    </Link>
                                                 </td>
                                                 <td>
-                                                    <button className='btn btn-danger' on onClick={() => { if (window.confirm('Are You Sure Delete Data ??')) { handleDelete(item.id) } }}>Delete</button>
+                                                    <button className='btn btn-danger' onClick={() => { if (window.confirm('Are You Sure Delete Data ??')) { handleDelete(item.id) } }}>Delete</button>
                                                 </td>
                                             </tr>
                                         </>
