@@ -1,23 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import { useSelector, useDispatch } from 'react-redux';
+import { increment, decrement } from './reduxtoolkit/counterSlice';
+
 
 function App() {
+  const myState = useSelector((state) => state.counter.count);
+  const dispach = useDispatch();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>REDUX TOOL KIT EXAMPLE</h1>
+      <input type="text" value={myState} />
+      <button onCanPlay={() => dispach(increment())}>Plus</button>
+      <button onCanPlay={() => dispach(decrement())}>Minus</button>
     </div>
   );
 }
