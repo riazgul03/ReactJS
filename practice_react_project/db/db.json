@@ -1,0 +1,7 @@
+ {
+    "restaurent": [
+        {"id": 1, "name": "json-resto", "auther": "riaz"},
+        {"id": 2, "name":  "java-resto", "auther": "gul"}
+    
+    ]
+ }
